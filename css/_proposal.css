@@ -1,0 +1,71 @@
+.proposal {
+    background: var(--main-bg-color-white) url(../img/proposal/proposal-bg.jpg) center no-repeat;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background-size: cover;
+}
+.proposal::after {
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.proposal-title {
+    font-size: var(--main-font-size-title);
+    font-weight: var(--main-font-weight-medium);
+    color: var(--main-light-font-color);
+    margin-top: 0;
+    padding-top: var(--main-pudding);
+}
+.proposal-title-sp {
+    font-size: calc(var(--main-font-size-txt) *2 - 2px);
+    font-weight: var(--main-font-weight-txt);
+}
+
+.proposal-txt {
+    font-size: calc(var(--main-font-size-txt) + 6px);
+    font-weight: var(--main-font-weight-txt);
+    color: var(--main-light-font-color);
+}
+
+.proposal-bottom-txt {
+    font-size: var(--main-font-size-txt);
+    font-weight: var(--main-font-weight-txt);
+    color: var(--main-light-font-color);
+    padding-bottom: var(--main-pudding);
+    margin: 0;
+}
+
+#proposal {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 16px 25px;
+}
+#proposal input {
+    padding: 16px 75px;
+}
+
+@media screen and (max-width: 320px){
+    #proposal {
+        padding: 11px 45px;
+    }
+    .proposal-title {
+        font-size:calc(var(--main-font-size-txt) + 6px);
+    }
+    .proposal-title-sp {
+        font-size: calc(var(--main-font-size-txt) + 2px);
+        font-weight: var(--main-font-weight-txt);
+    }
+    .proposal-txt {
+        font-size: var(--main-font-size-txt);
+    }
+}

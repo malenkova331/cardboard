@@ -1,0 +1,135 @@
+body {
+    background: #c3c3c3;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    /* стили для текстовки */
+    --main-font-weight-txt: 400;
+    --main-font-weight-smal: 500;
+    --main-font-weight-medium: 700;
+    --main-font-weight-bold: 900;
+    --main-font-size-txt: 14px;
+    --main-font-size-title: 32px;
+
+    /*цвета*/
+    --main-font-color: #373737;
+    /* белая текстовка */
+    --main-light-font-color: #ffffff;
+    /* цвет для названий товаров */
+    --font-color-product-txt: #313131;
+    
+    /* кнопоки и поля */
+    --button-bgcolor: #ff9d00;
+    --button-bgcolor-hover: #e88f00;
+    --button-bgcolor-focus: #d48300;
+    --main-border-radius: 4px;
+    --button-pudding: 11px 21px;
+    --input-tel-pudding:11px 90px 11px 20px;
+
+    /* фон*/
+    --main-bg-color-white: #ffffff;
+    --main-bg-color-block: #f4f4f4;
+
+    /*паддинги и марджины*/
+    --main-margin: 20px;
+    --main-pudding: 25px;
+
+    /*блок с преимуществами*/
+    --main-width: 941px;
+    --main-card-width: 294px;
+    --main-card-height: 132px;
+    --main-card-paddind: 35px 15px;
+    --main-card-img-width: 56px;
+    --main-card-img-height: 65px;
+    --main-card-txt-width: 202px;
+}
+
+/* кнопки и поля*/
+.button {
+    padding: var(--button-pudding);
+    font-size: var(--main-font-size-txt);
+    font-weight: var(--main-font-weight-smal);
+    color: var(--main-light-font-color);
+    background: var(--button-bgcolor);
+    border: 1px solid var(--button-bgcolor);
+    border-radius: var(--main-border-radius);
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.button:hover {
+    background: var(--button-bgcolor-hover);
+    border: 1px solid var(--button-bgcolor-hover);
+}
+.button:focus {
+    background: var(--button-bgcolor-focus);
+    border: 1px solid var(--button-bgcolor-focus);
+}
+
+.button-o {
+    background: transparent;
+    opacity: 0.5;
+    border: 1px solid #373737;
+    color: #373737;
+}
+
+.button-o:hover {
+    background: #d6d0d0;
+    opacity: 0.5;
+    border: 1px solid #373737;
+}
+.button-o:focus {
+    background: #adaaaa;
+    opacity: 0.5;
+    border: 1px solid #373737;
+    color: var(--main-light-font-color);
+}
+
+.input-tel {
+    padding: var(--input-tel-pudding);
+    border: 1px solid #ffffff;
+    border-radius: var(--main-border-radius);
+    font-size: var(--main-font-size-txt);
+    font-weight: var(--main-font-weight-smal);
+    outline: none;
+}
+
+/*медиа запросы*/
+
+@media screen and (max-width: 1024px){
+    :root {
+        --input-tel-pudding: 11px 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    :root {
+        --button-pudding: 11px 10px;
+        --input-tel-pudding: 11px 75px;
+    }
+    .hidden-xs {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    :root {
+        --button-pudding: 13px 30px;
+        --input-tel-pudding: 13px 70px;
+    }
+    .button {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    :root {
+        --button-pudding: 13px 20px;
+        --input-tel-pudding: 13px 40px;
+    }
+}
+ 

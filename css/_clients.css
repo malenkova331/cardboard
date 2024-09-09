@@ -1,0 +1,51 @@
+.clients {
+    background: var(--main-bg-color-white);
+    padding: 50px 0;
+}
+
+.clients-title {
+    position: relative;
+    text-align: center;
+    font-size: calc(var(--main-font-size-txt) *2 - 1px);
+    font-weight: var(--main-font-weight-medium);
+    color: var(--font-color-product-txt);
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-top: 0;
+}
+.clients-title::after {
+    position: absolute;
+    content: url(../img/products/element.png);
+    bottom: -15px;
+    left: 70px;
+    right: 70px;
+}
+
+.clients-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.client {
+    filter: grayscale(100%);
+    width: 212px;
+    height: 130px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.09);
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client:hover {
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 576px) {
+    .client {
+        filter: grayscale(0%);
+    }
+}
